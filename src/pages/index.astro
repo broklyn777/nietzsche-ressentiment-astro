@@ -1,4 +1,5 @@
 ---
+import ConceptCard from "../components/ConceptCard.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { coreIdeas, studyPath } from "../data/ressentiment";
 ---
@@ -45,10 +46,7 @@ import { coreIdeas, studyPath } from "../data/ressentiment";
       <div class="grid">
         {
           coreIdeas.map((idea) => (
-            <article>
-              <h3>{idea.title}</h3>
-              <p>{idea.text}</p>
-            </article>
+            <ConceptCard title={idea.title} text={idea.text} />
           ))
         }
       </div>
@@ -146,7 +144,6 @@ import { coreIdeas, studyPath } from "../data/ressentiment";
   }
 
   .intro p,
-  article p,
   li {
     color: var(--muted);
     line-height: 1.65;
@@ -193,18 +190,6 @@ import { coreIdeas, studyPath } from "../data/ressentiment";
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
-  }
-
-  article {
-    padding: 22px;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    background: rgba(255, 253, 248, 0.82);
-  }
-
-  article h3 {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
   }
 
   .study ol {
