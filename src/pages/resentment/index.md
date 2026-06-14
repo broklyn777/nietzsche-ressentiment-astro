@@ -97,6 +97,7 @@ Detta avsnitt är förberett för framtida utbyggnad. Varje punkt kan senare bli
 <ul class="future-grid">
   <li><strong>Har Nietzsche rätt diagnos men fel terapi?</strong> En jämförelse mellan Nietzsches avslöjande analys och frågan om vad som faktiskt läker bitterhet.</li>
   <li><strong>Är AA:s syn på resentment ett svar på samma problem?</strong> En undersökning av om tolvstegsarbete praktiskt bearbetar det Nietzsche teoretiskt beskriver.</li>
+  <li><strong><a href="/resentment/ressentiment-skuggor-och-splittring/">Ressentiment, skuggor och splittring</a></strong> En reflektion om sår, Platons grotta, logismoi, polarisering och förlåtelse.</li>
   <li><strong>Ressentiment och slavmoral</strong> En fördjupning i hur reaktivitet kan skapa moraliska system.</li>
   <li><strong>Bitterhet och oförlåtelse hos kyrkofäderna</strong> En studie av vrede, minne och hjärtats rening i tidig kristen tradition.</li>
   <li><strong>Förlåtelse och passivitet</strong> En prövning av skillnaden mellan förlåtelse, gränssättning och förnekelse.</li>
