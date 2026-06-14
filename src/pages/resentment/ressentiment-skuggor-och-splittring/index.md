@@ -35,6 +35,49 @@ Ressentiment kan förstås som en källa till sådana tankar. Såret börjar tal
 
 Ur ett kristet perspektiv är detta inte bara ett psykologiskt problem, utan också ett andligt. Människan riskerar att bli blind för nästan, för sanningen och för Gud.
 
+## Grekiska nyckelord
+
+Följande ord är inte färdiga “bevis” eller exakta översättningar, utan arbetsbegrepp. De kan hjälpa sidan att närma sig äldre kristet språk och samtidigt visa var kopplingarna till Nietzsche och AA behöver hanteras försiktigt.
+
+<div class="term-grid">
+  <section class="term-card">
+    <p class="term-label">Bitterhet</p>
+    <p class="term-greek" lang="grc">πικρία</p>
+    <p class="term-translit">pikría</p>
+    <p>Kan användas som ett enkelt ord för bitterhet eller skarphet i själen. Det ligger nära hur resentment ofta upplevs inifrån.</p>
+  </section>
+  <section class="term-card">
+    <p class="term-label">Minnet av oförrätter</p>
+    <p class="term-greek" lang="grc">μνησικακία</p>
+    <p class="term-translit">mnēsikakía</p>
+    <p>Bokstavligt nära “att minnas det onda”. Ett starkt kandidatord för långvarigt agg och oförsonligt fasthållande.</p>
+  </section>
+  <section class="term-card">
+    <p class="term-label">Vrede</p>
+    <p class="term-greek" lang="grc">ὀργή</p>
+    <p class="term-translit">orgḗ</p>
+    <p>Mer direkt vrede eller vredeutbrott. Bra för att skilja omedelbar ilska från det mer långvariga ressentimentet.</p>
+  </section>
+  <section class="term-card">
+    <p class="term-label">Tankar / impulser</p>
+    <p class="term-greek" lang="grc">λογισμοί</p>
+    <p class="term-translit">logismoí</p>
+    <p>Inre tankar, föreställningar eller impulser. I asketisk tradition kan de förstås som tankar som fångar och driver människan.</p>
+  </section>
+  <section class="term-card">
+    <p class="term-label">Splittraren</p>
+    <p class="term-greek" lang="grc">διάβολος</p>
+    <p class="term-translit">diábolos</p>
+    <p>Kan förstås som förtalaren, anklagaren eller den som kastar isär. Här används ordet för splittringens andliga logik.</p>
+  </section>
+  <section class="term-card">
+    <p class="term-label">Förlåtelse / frigörelse</p>
+    <p class="term-greek" lang="grc">ἄφεσις</p>
+    <p class="term-translit">áphesis</p>
+    <p>Betyder bland annat förlåtelse, efterskänkande eller frigörelse. Det ger ett språk för att släppa det som binder.</p>
+  </section>
+</div>
+
 ## Splittraren
 
 I kristen tradition kallas djävulen ibland **diabolos**, vilket kan förstås som anklagaren, förtalaren eller den som kastar isär. Splittring är därför inte bara politisk oenighet, utan kan ses som ett andligt mönster.
