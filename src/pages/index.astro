@@ -1,0 +1,239 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { coreIdeas, studyPath } from "../data/ressentiment";
+---
+
+<BaseLayout
+  title="Nietzsche: Ressentiment"
+  description="Ett lärprojekt i Astro om Friedrich Nietzsche och begreppet ressentiment."
+>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Astro-lärprojekt</p>
+      <h1>Friedrich Nietzsche: ressentiment</h1>
+      <p class="lead">
+        En liten webbplats byggd i Astro för att förstå hur ett känslomässigt
+        sår kan bli till moral, identitet och samhällskritik.
+      </p>
+      <div class="actions">
+        <a href="#begrepp">Utforska begreppen</a>
+        <a href="#studievag" class="secondary">Se studievägen</a>
+      </div>
+    </section>
+
+    <section class="intro" aria-label="Kort introduktion">
+      <div>
+        <h2>Vad bygger du?</h2>
+        <p>
+          Det här projektet visar Astro-grunderna: en sida i
+          <code>src/pages</code>, en återanvändbar layout i
+          <code>src/layouts</code> och innehåll som data i
+          <code>src/data</code>.
+        </p>
+      </div>
+      <blockquote>
+        Ressentiment är intressant för att det gör psykologi till filosofi:
+        det frågar hur känslor kan skapa värden.
+      </blockquote>
+    </section>
+
+    <section id="begrepp" class="concepts">
+      <div class="section-heading">
+        <p class="eyebrow">Centrala begrepp</p>
+        <h2>Tre idéer att börja med</h2>
+      </div>
+      <div class="grid">
+        {
+          coreIdeas.map((idea) => (
+            <article>
+              <h3>{idea.title}</h3>
+              <p>{idea.text}</p>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section id="studievag" class="study">
+      <div class="section-heading">
+        <p class="eyebrow">Nästa steg</p>
+        <h2>Din studieväg</h2>
+      </div>
+      <ol>
+        {studyPath.map((step) => <li>{step}</li>)}
+      </ol>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  main {
+    width: min(1120px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 32px 0 56px;
+  }
+
+  .hero {
+    min-height: 72vh;
+    display: grid;
+    align-content: center;
+    padding: 48px 0;
+  }
+
+  .eyebrow {
+    margin: 0 0 12px;
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin-top: 0;
+  }
+
+  h1 {
+    max-width: 850px;
+    margin-bottom: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3.2rem, 9vw, 7.4rem);
+    line-height: 0.92;
+  }
+
+  .lead {
+    max-width: 720px;
+    color: var(--muted);
+    font-size: clamp(1.15rem, 2vw, 1.45rem);
+    line-height: 1.55;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .actions a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 18px;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    background: var(--accent);
+    color: white;
+    font-weight: 750;
+    text-decoration: none;
+  }
+
+  .actions .secondary {
+    background: transparent;
+    color: var(--accent-dark);
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+    gap: 28px;
+    align-items: start;
+    padding: 28px 0 52px;
+    border-top: 1px solid var(--line);
+  }
+
+  .intro p,
+  article p,
+  li {
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  code {
+    padding: 0.12em 0.35em;
+    border-radius: 5px;
+    background: rgba(143, 45, 28, 0.09);
+    color: var(--accent-dark);
+    font-size: 0.92em;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 22px;
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    background: var(--panel);
+    box-shadow: var(--shadow);
+    color: var(--accent-dark);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.25rem;
+    line-height: 1.45;
+  }
+
+  .concepts,
+  .study {
+    padding: 44px 0;
+  }
+
+  .section-heading {
+    max-width: 700px;
+    margin-bottom: 22px;
+  }
+
+  .section-heading h2 {
+    margin-bottom: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 4vw, 3.6rem);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  article {
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 253, 248, 0.82);
+  }
+
+  article h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  .study ol {
+    display: grid;
+    gap: 12px;
+    max-width: 780px;
+    margin: 0;
+    padding-left: 24px;
+  }
+
+  .study li::marker {
+    color: var(--accent);
+    font-weight: 800;
+  }
+
+  @media (max-width: 760px) {
+    main {
+      width: min(100% - 24px, 1120px);
+      padding-top: 20px;
+    }
+
+    .hero {
+      min-height: auto;
+      padding: 54px 0 42px;
+    }
+
+    .intro,
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
