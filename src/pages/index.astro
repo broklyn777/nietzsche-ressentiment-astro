@@ -18,7 +18,7 @@ import { coreIdeas, studyPath } from "../data/ressentiment";
       </p>
       <div class="actions">
         <a href="#begrepp">Utforska begreppen</a>
-        <a href="#studievag" class="secondary">Se studievägen</a>
+        <a href="/studie/" class="secondary">Öppna studiesidan</a>
       </div>
     </section>
 
@@ -60,6 +60,9 @@ import { coreIdeas, studyPath } from "../data/ressentiment";
       <ol>
         {studyPath.map((step) => <li>{step}</li>)}
       </ol>
+      <p class="study-link">
+        Fortsätt med den längre kapitelstrukturen på <a href="/studie/">studiesidan</a>.
+      </p>
     </section>
   </main>
 </BaseLayout>
@@ -203,6 +206,18 @@ import { coreIdeas, studyPath } from "../data/ressentiment";
   .study li::marker {
     color: var(--accent);
     font-weight: 800;
+  }
+
+  .study-link {
+    margin-top: 18px;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  .study-link a {
+    color: var(--accent-dark);
+    font-weight: 750;
+    text-underline-offset: 3px;
   }
 
   @media (max-width: 760px) {

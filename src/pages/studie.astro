@@ -1,0 +1,289 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { chapters, comparisonRows } from "../data/studyChapters";
+---
+
+<BaseLayout
+  title="Studie: Ressentiment, kirkefedre og AA"
+  description="En kapittelbasert studieside om ressentiment hos Nietzsche, kirkefedre og AA."
+>
+  <main>
+    <nav class="top-nav" aria-label="Huvudnavigation">
+      <a href="/">Start</a>
+      <span aria-hidden="true">/</span>
+      <span>Studie</span>
+    </nav>
+
+    <header class="hero">
+      <p class="eyebrow">Studieguide</p>
+      <h1>Ressentiment, kirkefedre och AA</h1>
+      <p class="lead">
+        En kapitelbaserad undersida för längre text, anteckningar och
+        jämförelser mellan Nietzsche, kristen själavårdstradition och AAs
+        praktiska arbete med resentment.
+      </p>
+    </header>
+
+    <section class="layout">
+      <aside class="toc" aria-label="Innehållsförteckning">
+        <p class="toc-title">Kapitel</p>
+        <ol>
+          {
+            chapters.map((chapter) => (
+              <li>
+                <a href={`#${chapter.id}`}>{chapter.title.replace(/^\d+\.\s/, "")}</a>
+              </li>
+            ))
+          }
+        </ol>
+      </aside>
+
+      <div class="content">
+        <section class="note">
+          <h2>Hur sidan är tänkt att användas</h2>
+          <p>
+            Detta är en arbetsyta för studier. Varje kapitel har brödtext och
+            frågor. Senare kan vi flytta kapitlen till Markdown eller
+            content collections, men just nu är allt enkelt och synligt i
+            Astro-koden.
+          </p>
+        </section>
+
+        {
+          chapters.map((chapter) => (
+            <article id={chapter.id} class="chapter">
+              <p class="chapter-kicker">Kapitel</p>
+              <h2>{chapter.title}</h2>
+              {chapter.body.map((paragraph) => <p>{paragraph}</p>)}
+              <div class="questions">
+                <h3>Reflektionsfrågor</h3>
+                <ul>
+                  {chapter.questions.map((question) => <li>{question}</li>)}
+                </ul>
+              </div>
+            </article>
+          ))
+        }
+
+        <section class="comparison" aria-labelledby="comparison-title">
+          <p class="chapter-kicker">Översikt</p>
+          <h2 id="comparison-title">Tre sätt att läsa problemet</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tradition</th>
+                  <th>Fokus</th>
+                  <th>Praktik</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  comparisonRows.map((row) => (
+                    <tr>
+                      <th scope="row">{row.tradition}</th>
+                      <td>{row.focus}</td>
+                      <td>{row.practice}</td>
+                    </tr>
+                  ))
+                }
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  main {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 28px 0 64px;
+  }
+
+  .top-nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  .top-nav a {
+    color: var(--accent-dark);
+    font-weight: 750;
+    text-decoration: none;
+  }
+
+  .hero {
+    max-width: 920px;
+    padding: 72px 0 42px;
+  }
+
+  .eyebrow,
+  .chapter-kicker,
+  .toc-title {
+    margin: 0 0 12px;
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin-top: 0;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3rem, 8vw, 6.6rem);
+    line-height: 0.95;
+  }
+
+  .lead {
+    max-width: 780px;
+    color: var(--muted);
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    line-height: 1.6;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 34px;
+    align-items: start;
+  }
+
+  .toc {
+    position: sticky;
+    top: 24px;
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 253, 248, 0.78);
+  }
+
+  .toc ol {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .toc a {
+    color: var(--ink);
+    text-decoration-color: rgba(143, 45, 28, 0.35);
+    text-underline-offset: 3px;
+  }
+
+  .content {
+    display: grid;
+    gap: 18px;
+  }
+
+  .note,
+  .chapter,
+  .comparison {
+    padding: 28px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+
+  .chapter {
+    scroll-margin-top: 24px;
+  }
+
+  .note h2,
+  .chapter h2,
+  .comparison h2 {
+    margin-bottom: 16px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    line-height: 1.08;
+  }
+
+  .note p,
+  .chapter p,
+  .questions li,
+  td {
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  .chapter p {
+    max-width: 78ch;
+  }
+
+  .questions {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+
+  .questions h3 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  .questions ul {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    min-width: 680px;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 14px;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    color: var(--ink);
+  }
+
+  @media (max-width: 860px) {
+    main {
+      width: min(100% - 24px, 1180px);
+    }
+
+    .hero {
+      padding: 52px 0 30px;
+    }
+
+    .layout {
+      grid-template-columns: 1fr;
+    }
+
+    .toc {
+      position: static;
+    }
+
+    .note,
+    .chapter,
+    .comparison {
+      padding: 22px;
+    }
+  }
+</style>
