@@ -208,6 +208,17 @@ const tocHeadings = headings.filter((heading) => heading.depth === 2);
     margin: 0 0 16px;
   }
 
+  .knowledge-content :global(sup) {
+    font-size: 0.75em;
+    line-height: 0;
+  }
+
+  .knowledge-content :global(sup a) {
+    color: var(--accent-dark);
+    font-weight: 800;
+    text-decoration: none;
+  }
+
   .knowledge-content :global(ul) {
     display: grid;
     gap: 8px;
@@ -257,6 +268,24 @@ const tocHeadings = headings.filter((heading) => heading.depth === 2);
     display: block;
     margin-bottom: 6px;
     color: var(--ink);
+  }
+
+  .knowledge-content :global(.footnotes) {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 0.95rem;
+  }
+
+  .knowledge-content :global(.footnotes h2) {
+    margin-top: 0;
+    font-size: 1.4rem;
+  }
+
+  .knowledge-content :global(.footnotes ol) {
+    display: grid;
+    gap: 10px;
+    padding-left: 22px;
   }
 
   @media (max-width: 860px) {

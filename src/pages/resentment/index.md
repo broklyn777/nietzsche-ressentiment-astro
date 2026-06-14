@@ -17,6 +17,8 @@ I vardagligt språk kan resentment beskrivas som bitterhet, agg eller en kvarhä
 
 Inom AA får resentment en särskild tyngd. Det beskrivs som ett centralt hinder för nykterhet, ärlighet och andlig frihet. Där handlar arbetet inte bara om att känna mindre ilska, utan om att undersöka hur oförsonlighet, rädsla, sårad stolthet och gamla kränkningar fortsätter att styra människans inre liv.
 
+[Läs den första fördjupningen: Vad är resentment?](/resentment/vad-ar-resentment/)
+
 ## Vad är ressentiment?
 
 Ressentiment hos Nietzsche är mer än bitterhet i vanlig mening. Det är en reaktiv hållning där den som inte kan handla direkt i världen i stället omtolkar världen moraliskt. Det som upplevs som starkt, fritt eller överlägset kan börja tolkas som ont, medan den egna maktlösheten ges moralisk dignitet.
