@@ -1,62 +1,62 @@
 export const chapters = [
   {
-    id: "utgangspunkt",
-    title: "1. Utgangspunkt: hva er ressentiment?",
+    id: "startpunkt",
+    title: "1. Utgångspunkt: vad är ressentiment?",
     body: [
-      "Ressentiment kan forstås som et vedvarende indre nag som ikke bare er en følelse, men en måte å tolke verden på. Hos Nietzsche blir dette viktig fordi følelsen kan bli moral: Den skadde eller maktesløse tolker den andres styrke som ondskap, og sin egen svakhet som godhet.",
-      "På denne siden kan vi undersøke begrepet uten å låse det til bare én tradisjon. Nietzsche, kristen askese, kirkefedrenes kamp med lidenskaper, og AAs praktiske arbeid med resentment kan leses som ulike forsøk på å forstå hva et menneske gjør med krenkelse, sinne og skyld.",
+      "Ressentiment kan förstås som ett varaktigt inre agg som inte bara är en känsla, utan ett sätt att tolka världen. Hos Nietzsche blir detta viktigt eftersom känslan kan bli moral: Den sårade eller maktlösa tolkar den andres styrka som ondska, och sin egen svaghet som godhet.",
+      "På den här sidan kan vi undersöka begreppet utan att låsa det till en enda tradition. Nietzsche, kristen askes, kyrkofädernas kamp med lidelser och AAs praktiska arbete med resentment kan läsas som olika försök att förstå vad en människa gör med kränkelse, vrede och skuld.",
     ],
     questions: [
-      "Når er nag bare en følelse, og når blir det en hel fortelling om verden?",
-      "Hva skjer med selvbildet når jeg gjør den andre ansvarlig for min indre uro?",
+      "När är agg bara en känsla, och när blir det en hel berättelse om världen?",
+      "Vad händer med självbilden när jag gör den andra ansvarig för min inre oro?",
     ],
   },
   {
     id: "nietzsche",
-    title: "2. Nietzsche: moralens psykologiske opprinnelse",
+    title: "2. Nietzsche: moralens psykologiska ursprung",
     body: [
-      "Nietzsche er interessert i hvor verdier kommer fra. Han spør ikke bare om noe er godt eller ondt, men hvilken type menneskelig energi som skaper disse ordene. Er verdien født av livskraft, skapelse og ansvar, eller av reaksjon, avmakt og skjult hevn?",
-      "I denne lesningen blir ressentiment en kreativ, men problematisk kraft. Den skaper mening, men ofte gjennom omvending: Den sterke blir kalt ond, den svake blir kalt god, og lidelse får moralsk overtak.",
+      "Nietzsche är intresserad av var värden kommer ifrån. Han frågar inte bara om något är gott eller ont, utan vilken typ av mänsklig energi som skapar dessa ord. Är värdet fött ur livskraft, skapande och ansvar, eller ur reaktion, vanmakt och dold hämnd?",
+      "I denna läsning blir ressentiment en kreativ men problematisk kraft. Den skapar mening, men ofta genom omvändning: Den starke kallas ond, den svage kallas god, och lidandet får moraliskt övertag.",
     ],
     questions: [
-      "Hva mener Nietzsche at moral skjuler om menneskets psykologi?",
-      "Hvordan kan en moralsk dom også være en form for selvforsvar?",
+      "Vad menar Nietzsche att moral kan dölja om människans psykologi?",
+      "Hur kan en moralisk dom också vara en form av självförsvar?",
     ],
   },
   {
     id: "kyrkofader",
-    title: "3. Kirkefedre: lidenskaper, vrede og renselse",
+    title: "3. Kyrkofäder: lidelser, vrede och rening",
     body: [
-      "Hos mange tidlige kristne forfattere er spørsmålet ikke primært ressentiment i Nietzsches forstand, men hvordan sjelen formes av lidenskaper som vrede, stolthet, misunnelse og bitterhet. Det finnes en praktisk åndelig psykologi: Mennesket må lære å se sine bevegelser, bekjenne dem og bli forvandlet.",
-      "Her kan prosjektet ditt undersøke en interessant spenning. Nietzsche kritiserer kristen moral som mulig uttrykk for ressentiment, mens kristne asketiske tradisjoner ofte forsøker å frigjøre mennesket fra nettopp bitterhet, hevnlyst og selvbedrag.",
+      "Hos många tidiga kristna författare är frågan inte främst ressentiment i Nietzsches mening, utan hur själen formas av lidelser som vrede, stolthet, avund och bitterhet. Här finns en praktisk andlig psykologi: Människan behöver lära sig att se sina inre rörelser, bekänna dem och förvandlas.",
+      "Här kan projektet undersöka en intressant spänning. Nietzsche kritiserar kristen moral som ett möjligt uttryck för ressentiment, medan kristna asketiska traditioner ofta försöker befria människan från just bitterhet, hämndlust och självbedrägeri.",
     ],
     questions: [
-      "Er kristen ydmykhet alltid svakhet hos Nietzsche, eller kan den også være en disiplin mot bitterhet?",
-      "Hvordan skiller man mellom anger, skyld, tilgivelse og selvforakt?",
+      "Är kristen ödmjukhet alltid svaghet hos Nietzsche, eller kan den också vara en disciplin mot bitterhet?",
+      "Hur skiljer man mellan ånger, skuld, förlåtelse och självförakt?",
     ],
   },
   {
     id: "aa",
-    title: "4. AA: resentment som åndelig og praktisk problem",
+    title: "4. AA: resentment som andligt och praktiskt problem",
     body: [
-      "I Anonyme Alkoholikeres tradisjon beskrives resentment ofte som noe som binder personen til fortiden og til andres feil. Arbeidet handler mindre om abstrakt moralfilosofi og mer om ærlig inventar: Hva holder jeg fast ved, hva frykter jeg, og hvilken rolle spiller jeg selv i mønsteret?",
-      "Dette gir en praktisk kontrast til Nietzsche. Der Nietzsche analyserer hvordan bitterhet kan bli moral, arbeider AA med hvordan bitterhet kan bli en livsfarlig indre belastning som må undersøkes, deles og slippes.",
+      "I Anonyma Alkoholisters tradition beskrivs resentment ofta som något som binder personen vid det förflutna och vid andras fel. Arbetet handlar mindre om abstrakt moralfilosofi och mer om ärlig inventering: Vad håller jag fast vid, vad fruktar jag, och vilken roll spelar jag själv i mönstret?",
+      "Detta ger en praktisk kontrast till Nietzsche. Där Nietzsche analyserar hur bitterhet kan bli moral, arbetar AA med hur bitterhet kan bli en livsfarlig inre belastning som behöver undersökas, delas och släppas.",
     ],
     questions: [
-      "Hva skjer når resentment skrives ned konkret i stedet for å forbli en diffus følelse?",
-      "Hvordan kan ansvar tas uten at det blir selvhat?",
+      "Vad händer när resentment skrivs ned konkret i stället för att förbli en diffus känsla?",
+      "Hur kan ansvar tas utan att det blir självhat?",
     ],
   },
   {
-    id: "sammenligning",
-    title: "5. Sammenligning: tre språk for samme menneskelige problem",
+    id: "jamforelse",
+    title: "5. Jämförelse: tre språk för samma mänskliga problem",
     body: [
-      "Nietzsche, kirkefedrene og AA bruker ikke samme begrepsapparat. Likevel kretser alle rundt et menneske som er bundet av krenkelse, frykt, stolthet eller avmakt. Nietzsche avslører, kirkefedrene diagnostiserer sjelens lidenskaper, og AA tilbyr en trinnvis praksis.",
-      "En god studieside kan derfor la dem stå i samtale uten å tvinge dem til å være enige. Målet er ikke å avgjøre alt med én gang, men å bygge et kart over hvordan bitterhet kan bli moral, karakter, sykdom, bønn eller frigjøringsarbeid.",
+      "Nietzsche, kyrkofäderna och AA använder inte samma begreppsapparat. Ändå kretsar alla kring en människa som är bunden av kränkelse, rädsla, stolthet eller vanmakt. Nietzsche avslöjar, kyrkofäderna diagnostiserar själens lidelser, och AA erbjuder en stegvis praktik.",
+      "En bra studiesida kan därför låta dem stå i samtal utan att tvinga dem att vara överens. Målet är inte att avgöra allt på en gång, utan att bygga en karta över hur bitterhet kan bli moral, karaktär, sjukdom, bön eller befrielsearbete.",
     ],
     questions: [
-      "Hva vinner vi ved å lese disse tradisjonene sammen?",
-      "Hvor kolliderer de mest grunnleggende med hverandre?",
+      "Vad vinner vi på att läsa dessa traditioner tillsammans?",
+      "Var kolliderar de mest grundläggande med varandra?",
     ],
   },
 ];
@@ -64,17 +64,17 @@ export const chapters = [
 export const comparisonRows = [
   {
     tradition: "Nietzsche",
-    focus: "Moralens opprinnelse og skjulte psykologiske drivkrefter.",
-    practice: "Genealogisk kritikk: spør hvor verdiene kommer fra.",
+    focus: "Moralens ursprung och dolda psykologiska drivkrafter.",
+    practice: "Genealogisk kritik: fråga var värdena kommer ifrån.",
   },
   {
-    tradition: "Kirkefedre",
-    focus: "Sjelens lidenskaper, renselse, stolthet, vrede og omvendelse.",
-    practice: "Selvransakelse, bønn, askese, bekjennelse og åndelig veiledning.",
+    tradition: "Kyrkofäder",
+    focus: "Själens lidelser, rening, stolthet, vrede och omvändelse.",
+    practice: "Självrannsakan, bön, askes, bekännelse och andlig vägledning.",
   },
   {
     tradition: "AA",
-    focus: "Resentment som praktisk hinder for nøkternhet og frihet.",
-    practice: "Inventar, deling, ansvar, bønn/meditasjon og handling.",
+    focus: "Resentment som praktiskt hinder för nykterhet och frihet.",
+    practice: "Inventering, delning, ansvar, bön/meditation och handling.",
   },
 ];
