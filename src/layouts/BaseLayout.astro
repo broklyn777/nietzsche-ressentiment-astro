@@ -18,7 +18,7 @@ const { title, description } = Astro.props;
 
 <style is:global>
   :root {
-    color-scheme: light;
+    color-scheme: light dark;
     --ink: #191714;
     --muted: #665f56;
     --paper: #fbf7ef;
@@ -30,6 +30,19 @@ const { title, description } = Astro.props;
     font-family:
       Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #f5efe5;
+      --muted: #c8bcae;
+      --paper: #17130f;
+      --panel: #211b16;
+      --line: #3d3128;
+      --accent: #e07d65;
+      --accent-dark: #f0b29f;
+      --shadow: 0 18px 55px rgba(0, 0, 0, 0.32);
+    }
   }
 
   * {
