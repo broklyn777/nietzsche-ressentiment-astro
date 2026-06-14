@@ -300,6 +300,11 @@ const tocHeadings = headings.filter((heading) => heading.depth === 2);
       padding: 52px 0 30px;
     }
 
+    .lead {
+      font-size: 1.22rem;
+      line-height: 1.65;
+    }
+
     .knowledge-layout {
       grid-template-columns: 1fr;
       gap: 18px;
@@ -307,6 +312,7 @@ const tocHeadings = headings.filter((heading) => heading.depth === 2);
 
     .toc-panel {
       position: static;
+      font-size: 1.04rem;
     }
 
     .toc-panel details:not([open]) {
@@ -320,16 +326,16 @@ const tocHeadings = headings.filter((heading) => heading.depth === 2);
     .knowledge-content :global(p),
     .knowledge-content :global(li),
     .knowledge-content :global(td) {
-      font-size: 1.1rem;
-      line-height: 1.76;
+      font-size: 1.18rem;
+      line-height: 1.72;
     }
 
     .knowledge-content :global(h2) {
-      font-size: clamp(2rem, 8vw, 2.45rem);
+      font-size: clamp(2.08rem, 8.5vw, 2.55rem);
     }
 
     .knowledge-content :global(h3) {
-      font-size: 1.18rem;
+      font-size: 1.26rem;
     }
 
     .knowledge-content :global(.future-grid) {
